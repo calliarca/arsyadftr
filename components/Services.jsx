@@ -11,17 +11,17 @@ const servicesData = [
     {
         icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
         title: 'Web Design',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
+        description: 'I specialize in crafting visually stunning and user-friendly websites that reflect your brand identity and captivate your audience. With expertise in responsive design, UI/UX, graphic elements. ',
     },
     {
         icon: <Blocks size={72} strokeWidth={0.8} />,
         title: 'Web Development',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
+        description: 'I specialize in crafting custom web solutions tailored to your needs, including frontend and backend development, responsive design, e-commerce solutions, and SEO optimization.',
     },
     {
         icon: <Gem size={72} strokeWidth={0.8} />,
         title: 'Internet of Things Development',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
+        description: 'Specializing in bespoke IoT development solutions, I offer end-to-end services encompassing consultation, hardware and software development, connectivity protocols, data analytics, security, and compliance. ',
     },
 ];
 

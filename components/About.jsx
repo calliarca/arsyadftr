@@ -61,22 +61,22 @@ const qualificationData = [
         ],
     },
     {
-        title: 'Organizaiton Experience',
+        title: 'Experience',
         data: [
             {
-                organization: 'SMAN 9 Bandung',
-                role: 'Saintek/MIPA',
-                years: '2019 - 2021',
+                organization: 'Lab. Dasar Komputer',
+                role: 'Senior Human Resource & Development Division',
+                years: '2022 - 2024',
             },
             {
-                organization: 'SMAN 9 Bandung',
-                role: 'Saintek/MIPA',
-                years: '2019 - 2021',
+                organization: 'Lab. Programmable Logic Controller',
+                role: 'Laboratory Asisstant',
+                years: '2023 - Present',
             },
             {
-                organization: 'SMAN 9 Bandung',
-                role: 'Saintek/MIPA',
-                years: '2019 - 2021',
+                organization: 'PRISMA (Pemuda Remaja Islam)',
+                role: 'Chairman of Organization',
+                years: '2019 - Present',
             },
         ],
     },
@@ -87,16 +87,28 @@ const skillData = [
         title : 'skills',
         data: [
             {
-                name: 'HTML, CSS',
+                imgPath: '/about/c.svg',
             },
             {
-                name: 'Front-end Development',
+                imgPath: '/about/cpp.svg',
             },
             {
-                name: 'Javascript, PHP',
+                imgPath: '/about/html5.svg',
             },
             {
-                name: 'Back-end Development',
+                imgPath: '/about/css3.svg',
+            },
+            {
+                imgPath: '/about/mysql.svg',
+            },
+            {
+                imgPath: '/about/php.svg',
+            },
+            {
+                imgPath: '/about/reactjs.svg',
+            },
+            {
+                imgPath: '/about/tailwind.svg',
             },
         ],
     },
@@ -114,6 +126,9 @@ const skillData = [
             },
             {
                 imgPath: '/about/wordpress.svg',
+            },
+            {
+                imgPath: '/about/arduino.svg',
             },
         ],
     },
@@ -168,7 +183,7 @@ const About = () => {
                             <h3 className='h3 mb-4 flex items-center xl:text-left'>
                             <span style={{marginRight: '0.2em'}}>I'm a </span>
                             <Typewriter 
-                                words={[' IoT Enthusiast', ' Web Developer', ' UI/UX Researcher', ' Anime Watcher', ' Engineer']}
+                                words={[' IoT Enthusiast', ' Web Developer', ' UI/UX Researcher', ' Engineer']}
                                 loop={100}
                                 cursor
                                 cursorStyle='_'
@@ -219,12 +234,12 @@ const About = () => {
                                         <div className='flex gap-x-4 items-center text-[22px] text-primary'>
                                             <Briefcase />
                                             <h4 className='capitalize font-medium'>
-                                                {getData(qualificationData, 'Organizaiton Experience').title}
+                                                {getData(qualificationData, 'Experience').title}
                                             </h4>
                                         </div>
                                         {/* list */}
                                         <div className='flex flex-col gap-y-8'>
-                                            {getData(qualificationData, 'Organizaiton Experience').data.map((item, index)=> {
+                                            {getData(qualificationData, 'Experience').data.map((item, index)=> {
                                                 const {organization, role, years} = item;
                                                 return(
                                                     <div className='flex gap-x-8 group' key={index}>
@@ -291,23 +306,25 @@ const About = () => {
                                 <div className='mb-16'>
                                     <h4 className='text-xl font-semibold mb-2'>Skills</h4>
                                     <div className='border-b border-border mb-4'></div>
-                                    {/* skill list */}
-                                    <div>
-                                        {getData(skillData, 'skills').data.map(
-                                            (item, index)=> {
-                                                const {name} = item;
-                                                return (
-                                                <div 
-                                                className='w-2/4 text-center xl:text-left mx-auto xl:mx-0' 
-                                                key={index}
-                                                >
-                                                    <div className='font-medium'>{name}</div>
+                                    {/* tools list */}
+                                    <div className='flex gap-x-8 justify-center xl:justify-start'>
+                                        {getData(skillData, 'skills').data.map((item, index)=>{
+                                            const {imgPath} = item;
+                                            return (
+                                            <div key={index}>
+                                                <Image 
+                                                src={imgPath} 
+                                                width={48} 
+                                                height={48} 
+                                                alt='' 
+                                                priority
+                                                />
                                                 </div>
-                                                );
-                                            }
-                                        )}
+                                                    );
+                                                }
+                                            )}
+                                        </div>
                                     </div>
-                                </div>
                                 {/* tools */}
                                 <div>
                                     <h4 className='text-xl font-semibold mb-2 xl:text-left'>

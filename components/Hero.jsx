@@ -4,7 +4,7 @@ import { Download, Send } from 'lucide-react';
 
 import{
     RiBriefcase4Fill,
-    RiTeamFill,
+    RiFilePaper2Fill,
     RiTodoFill,
     RiArrowDownSLine,
 } from 'react-icons/ri';
@@ -35,10 +35,12 @@ const Hero = () => {
                     Contact me <Send size={18} />
                  </Button>
                 </Link>
+                <Link href='https://youtu.be/dQw4w9WgXcQ?si=Aj9pNOjRRiXOJ13t'>
                 <Button variant='secondary'className='gap-x-2'>
                     Download CV 
                     <Download  size={18} />
                  </Button>
+                 </Link>
             </div>
              {/* socials */}
              <Socials 
@@ -51,24 +53,25 @@ const Hero = () => {
                 <Badge 
                 containerStyles='absolute top-[24%] -left-[5rem]'
                     icon={<RiBriefcase4Fill />} 
-                    endCountNum={3} 
+                    endCountNum={2}
+                    endCountText='+' 
                     badgeText='Years Of Experience' 
                 />
                 {/* badge 2 */}
                 <Badge 
                 containerStyles='absolute top-[80%] -left-[1rem]'
                     icon={<RiTodoFill />} 
-                    endCountNum={6} 
-                    endCountText='K'
+                    endCountNum={10} 
+                    endCountText='+'
                     badgeText='Finished Project' 
                 />
                 {/* badge 3 */}
                 <Badge 
                 containerStyles='absolute top-[55%] -right-8'
-                    icon={<RiTeamFill />} 
-                    endCountNum={8} 
-                    endCountText='K'
-                    badgeText='Happy Client' 
+                    icon={<RiFilePaper2Fill />} 
+                    endCountNum={10} 
+                    endCountText='+'
+                    badgeText='Certifi cation' 
                 />
                 <div className='bg-hero_shape2_light  dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'>
                 </div>
