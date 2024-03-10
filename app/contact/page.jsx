@@ -16,7 +16,7 @@ const Contact = () => {
           </div>
           <h1 className='h1 max-w-md mb-8'>Let's Work Together.</h1>
           <p className='subtitle max-w-[400px]'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, porro!
+          Ready to start your next project or have a question? Reach out to me through the contact section below. Whether you're looking for a consultation, want to discuss a collaboration, or simply have a query, I'm here to help. Fill out the form, and I'll get back to you as soon as possible. Let's turn your ideas into reality!
           </p>
         </div>
         {/* illustration */}

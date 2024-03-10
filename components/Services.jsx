@@ -49,7 +49,7 @@ const Services = () => {
                         <CardTitle className='mb-4'>
                             {item.title}
                         </CardTitle>
-                        <CardDescription className='text-lg'>
+                        <CardDescription className='text-sm'>
                             {item.description}
                         </CardDescription>
                     </CardContent>
